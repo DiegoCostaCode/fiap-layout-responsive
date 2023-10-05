@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap");
 
-body{
-    font-family: 'Kanit', sans-serif;
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+}
+
+section > .menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.menu > li {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+section > .menu > li > a {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  section > .menu {
+    flex-direction: column;
+  }
 }
